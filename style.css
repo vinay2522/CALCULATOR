@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color:#f19f46ef;
+    width: 600px;
+    height: 600px;
+}
+
+.display {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 96%;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #7c7a7a;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.equals {
+    grid-column: span 1.5;
+}
+
+.history {
+    margin-top: 20px;
+}
+
+.history h3 {
+    margin: 0;
+}
+
+.theme-toggle {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body.dark {
+    background-color: #333;
+}
+
+body.dark .calculator {
+    background-color: grey;
+}
+
+body.dark button {
+    background-color: wheat;
+    color: black;
+}
+
+body.dark button:hover {
+    background-color: #777;
+}
